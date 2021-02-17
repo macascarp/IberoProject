@@ -1,5 +1,3 @@
-// Importamos mongoose
-
 const mongoose = require('mongoose')
 const esquemaAuto = new mongoose.Schema ({
     marca: {
@@ -16,6 +14,5 @@ const esquemaAuto = new mongoose.Schema ({
     }
 })
 
-// Creamos el exports
 const Auto = mongoose.model("auto", esquemaAuto)
 module.exports = Auto
